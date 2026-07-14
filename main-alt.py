@@ -1,5 +1,5 @@
 """
-OCPP Charge Point Simulator with streamlit
+OCPP Charge Point Simulator
 Single-file version: UI + logic in one app.py
 """
 
@@ -17,7 +17,7 @@ from ev_simulator import start_ev_sim, stop_ev_sim, get_active_sim, DEFAULT_ID_T
 
 # ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="SEES · OCPP Terminal",
+    page_title="ECCS · OCPP Terminal",
     page_icon="🌙",
     layout="wide",
     initial_sidebar_state="collapsed",
@@ -685,7 +685,7 @@ else:
 
         elif ov == "ev_sim":
             # ── EV Simulator overlay ──────────────────────────────────────────
-            sim = get_active_sim()
+            sim = get_active_sim(connector_id)
             is_running = sim is not None and not sim._stop
 
             st.markdown('<div class="p3-overlay"><div class="p3-overlay-title">🚗 EV SIMULATOR</div>', unsafe_allow_html=True)
@@ -803,4 +803,6 @@ else:
 
     # ── Auto refresh ───────────────────────────────────────────────────────────
     time.sleep(2)
+    st.rerun()
+
     st.rerun()
