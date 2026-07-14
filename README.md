@@ -66,7 +66,8 @@ Arsitektur aplikasi ini dibagi menjadi beberapa modul independen agar mudah dipe
    git clone [https://github.com/Damons-11/ECCS.git](https://github.com/Damons-11/ECCS.git)
    cd ECCS
 2. pip install -r requirements.txt
-3. python main.py  
+3. python main.py
+4. streamlit run main-alt.py
 
 ## ⚙️ Konfigurasi
 
