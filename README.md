@@ -31,6 +31,26 @@ ocpp_chargepoint/
 - **Session Security:** Dilengkapi fitur *Screen Lock* untuk menahan sesi di fase *Finishing* hingga pengguna secara sadar mencabut konektor.
 - **Asynchronous Design:** Memastikan koneksi WebSocket tetap hidup (`Ping/Pong`) meskipun UI sedang memproses *input* pengguna.
 
+## ✅ Fitur lainnya
+
+### OCPP 1.6 Core
+| Fitur | Status |
+|---|---|
+| BootNotification | ✅ |
+| Heartbeat (otomatis periodik) | ✅ |
+| Authorize (RFID) | ✅ |
+| StartTransaction | ✅ |
+| StopTransaction | ✅ |
+| MeterValues (Energy, Power, Voltage, Current, Temperature, SoC) | ✅ |
+| StatusNotification (semua status OCPP) | ✅ |
+| RemoteStartTransaction | ✅ |
+| RemoteStopTransaction | ✅ |
+| ChangeAvailability | ✅ |
+| Reset (Hard/Soft) | ✅ |
+| GetConfiguration / ChangeConfiguration | ✅ |
+| TriggerMessage | ✅ |
+| UnlockConnector | ✅ |
+
 ## ⚙️ Persyaratan Sistem
 - **OS:** Windows / Linux / macOS
 | Komponen | Versi Minimum |
