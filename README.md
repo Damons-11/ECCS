@@ -4,10 +4,8 @@ ECCS adalah aplikasi *Charge Point Client* berbasis Python yang dirancang untuk 
 
 ## 📂 Struktur Proyek & Modul
 
-Arsitektur aplikasi ini dibagi menjadi beberapa modul independen agar mudah dipelihara dan dikembangkan:
-
-ocpp_chargepoint/
-│
+Arsitektur aplikasi ini dibagi menjadi beberapa modul independen agar mudah dipelihara dan dikembangkan:ocpp_chargepoint/
+#Arsitektur file
 ├── app.py                  # UI Streamlit utama (dashboard)
 ├── charge_point.py         # Model OCPP ChargePoint — semua handler & send
 ├── cp_bridge.py            # Jembatan async↔sync, state management, log
